@@ -63,13 +63,21 @@
                 <div class="question__cursive question__cursive_new">Уже совсем скоро Вы узнаете много <br> интересного о своем будущем!</div>
                 <h2 class="question__title question__title_new">Укажите свою дату рождения:</h2>
                 <form action="POST">
-                    <select name="day" id="day" required>
-                    </select>
-
-                    <select name="month" id="month" required></select>
-
-                    <select name="year" id="year" required></select>
-
+                    <div class="question__select">
+                        <select name="day" id="day" required>
+                        </select>
+                    </div>
+                    
+                    <div class="question__select">
+                        <select name="month" id="month" required>
+                        </select>
+                    </div>
+    
+                    <div class="question__select">
+                        <select name="year" id="year" required>
+                        </select>
+                    </div>
+                    
                     <button type="submit" class="btn question__btn">Далее</button>
                 </form>
                 <div class="question__number">Вопрос 3-5</div>

@@ -6,7 +6,7 @@
 }
 
 .question::before {
-    display: none;
+    /* display: none; */
     position: absolute;
     content: '';
     top: 50%;
@@ -19,7 +19,7 @@
 }
 
 .question::after {
-    display: none;
+    /* display: none; */
     position: absolute;
     content: '';
     bottom: 48px;
@@ -55,9 +55,9 @@
     color: #FFFFFF;
 }
 
-.question__one {
+/* .question__one {
     display: none;
-}
+} */
 
 .question__cursive_one {
     position: relative;

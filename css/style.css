@@ -33,7 +33,6 @@ body {
     cursor: pointer;
     width: 315.95px;
     height: 69.44px;
-    font-family: Roboto;
     font-weight: 300;
     font-size: 20px;
     line-height: 23px;
@@ -47,16 +46,11 @@ body {
 
 .btn::after {
     position: absolute;
-    display: none;
     content: '';
     top: 0;
     left: 0;
     background: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%);
     width: 150px;
     height: 69.44px;
-}
-
-.btn:hover::after {
-    display: block;
     animation: gradient 1.5s ease infinite;
 }
