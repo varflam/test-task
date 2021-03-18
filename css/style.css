@@ -1,4 +1,6 @@
 @import './blocks/promo.css';
+@import './blocks/prediction.css';
+@import './blocks/questions.css';
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -8,6 +10,7 @@
 
 body {
     margin: 0 auto;
+    background-color: #262628;
 }
 
 .container {
@@ -19,12 +22,9 @@ body {
 	0% {
 		left: 0;
 	}
-	50% {
+	100% {
 		left: 50%;
 	}
-    100% {
-        left: 0;
-    }
 }
 
 .btn {

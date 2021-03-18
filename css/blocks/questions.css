@@ -1,0 +1,24 @@
+.question {
+    padding: 133px 0 105px 0;
+    text-align: center;
+}
+
+.question__title {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #F6C866;
+    margin-bottom: 46px;
+}
+
+.question__number {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+}
+
+.question__three, .question__two, .question__four, .question__five {
+    display: none;
+}
