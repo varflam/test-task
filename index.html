@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Дата смерти 2021</title>
@@ -45,25 +47,36 @@
                 <button class="btn question__btn">Да</button>
                 <button class="btn question__btn">Нет</button>
                 <div class="question__number">Вопрос 1-5</div>
+                <div class="question__cursive question__cursive_one">Вы, конечно, умрете. <br> И все, с кем вы знакомы, <br> тоже однажды умрут.</div>
                 
             </div>
-            <div class="question__two">
-                <h2 class="question__title">Когда Вы чувствуете себя наиболее комфортно?</h2>
+            <div class="question__new question__two">
+                <div class="question__cursive question__cursive_new">Мы расскажем Вам не только подробности <br> вашей смерти, но также поможем Вам <br> избежать этой ужасной даты и продлить <br> вашу жизнь на многие годы.</div>
+                <h2 class="question__title question__title_new">Когда Вы чувствуете себя наиболее комфортно?</h2>
                 <button class="btn question__btn">Утро</button>
                 <button class="btn question__btn">День</button>
                 <button class="btn question__btn">Вечер</button>
                 <button class="btn question__btn">Ночь</button>
                 <div class="question__number">Вопрос 2-5</div>
             </div>
-            <div class="question__three">
-                <h2 class="question__title">Укажите свою дату рождения:</h2>
+            <div class="question__new question__three">
+                <div class="question__cursive question__cursive_new">Уже совсем скоро Вы узнаете много <br> интересного о своем будущем!</div>
+                <h2 class="question__title question__title_new">Укажите свою дату рождения:</h2>
                 <form action="POST">
-                    
+                    <select name="day" id="day" required>
+                    </select>
+
+                    <select name="month" id="month" required></select>
+
+                    <select name="year" id="year" required></select>
+
+                    <button type="submit" class="btn question__btn">Далее</button>
                 </form>
                 <div class="question__number">Вопрос 3-5</div>
             </div>
-            <div class="question__four">
-                <h2 class="question__title">Снятся ли Вам умершие люди?</h2>
+            <div class="question__new question__four">
+                <div class="question__cursive question__cursive_new">Смерть родного человека – одно из тяжелейших испытаний в жизни каждого из нас!</div>
+                <h2 class="question__title question__title_new">Снятся ли Вам умершие люди?</h2>
                 <button class="btn question__btn">Да</button>
                 <button class="btn question__btn">Нет</button>
                 <button class="btn question__btn">Иногда</button>
@@ -77,5 +90,7 @@
             </div>
         </div>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

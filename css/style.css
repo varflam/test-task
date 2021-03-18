@@ -1,6 +1,7 @@
 @import './blocks/promo.css';
 @import './blocks/prediction.css';
-@import './blocks/questions.css';
+@import './blocks/question_one.css';
+@import './blocks/question_new.css';
 
 * {
     font-family: 'Roboto', sans-serif;

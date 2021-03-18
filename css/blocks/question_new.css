@@ -1,0 +1,70 @@
+
+.question__cursive_new {
+    opacity: .6;
+    margin-bottom: 111px;
+}
+
+.question__title_new {
+    position: relative;
+}
+
+.question__title_new::before {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 1px;
+    left: -100%;
+    top: -74px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.question__title_new::after {
+    position: absolute;
+    content: '';
+    top: -165px;
+    right: -120px;
+    width: 146.06px;
+    height: 77.06px;
+    background: url('../../img/icons/eye-1.svg') center center/ cover no-repeat;
+    transform: rotate(-9.61deg);
+    opacity: .2;
+}
+
+.question__new {
+    position: relative;
+}
+
+.question__new::after {
+    position: absolute;
+    content: '';
+    bottom: 83px;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    background: url('../../img/icons/eye.svg') center center/ cover no-repeat;
+    opacity: .2;
+    transform: translateX(-50%);
+}
+
+.question__two, .question__three, .question__five {
+    display: none;
+}
+
+.question__new .question__number {
+    margin-top: 183px;
+}
+
+select {
+    color: #000;
+    width: 315.95px;
+    height: 69.44px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: #F6C866;
+    background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+select > option {
+    color: #000;
+}
