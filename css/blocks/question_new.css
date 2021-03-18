@@ -46,7 +46,7 @@
     transform: translateX(-50%);
 }
 
-.question__two, .question__three, .question__four, .question__five {
+.question__two, .question__one, .question__four, .question__five {
     display: none;
 }
 
