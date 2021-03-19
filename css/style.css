@@ -2,6 +2,8 @@
 @import './blocks/prediction.css';
 @import './blocks/question_one.css';
 @import './blocks/question_new.css';
+@import './media.css';
+
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -53,4 +55,24 @@ body {
     width: 150px;
     height: 69.44px;
     animation: gradient 1.5s ease infinite;
+}
+
+@media (max-width: 443px) {
+
+    .container {
+        width: 255px;
+    }
+
+    .btn {
+        width: 182px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+
+    .btn::after {
+        width: 87px;
+        height: 40px;
+    }
 }

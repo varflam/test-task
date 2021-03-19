@@ -1,7 +1,8 @@
 .promo {
     position: relative;
     padding: 40px 0 70px 0;
-    background: url('../../img/bg/blik.png') #262628 top center /auto no-repeat;
+    background: url('../../img/bg/blik.png') #262628 top center /100% auto no-repeat;
+    width: 100%;
 }
 
 .promo::after {

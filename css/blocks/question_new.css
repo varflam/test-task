@@ -11,7 +11,7 @@
 .question__title_new::before {
     position: absolute;
     content: '';
-    width: 100vw;
+    width: 200vw;
     height: 1px;
     left: -100%;
     top: -74px;
@@ -46,7 +46,7 @@
     transform: translateX(-50%);
 }
 
-.question__two, .question__one, .question__four, .question__five {
+.question__one, .question__two, .question__five, .question__four {
     display: none;
 }
 
