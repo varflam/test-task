@@ -169,4 +169,71 @@
         top: 20px;
         right: 50px; 
     }
+
+    .question__five .question__cursive {
+        padding: 12px;
+        width: 259px;
+        height: 84px;
+    }
+
+    .spinner img {
+        width: 123px;
+        height: 123px;
+    }
+
+    .spinner__text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .micro__img {
+        width: 146.55px;
+        height: 69px;
+        margin-bottom: 39px;
+    }
+
+    .micro__progressbar {
+        width: 259px;
+        height: 4px;
+        margin-bottom: 24px;
+    }
+
+    .micro__percent {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 12px;
+    }
+
+    .micro__descr {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .final__thanks {
+        padding: 6px 14px 16px 14px;
+        font-size: 14px;
+        line-height: 18px;
+        width: 259px;
+        height: 94px;
+        margin-bottom: 28px;
+    }
+
+    .final__thanks::before {
+        border-width: 15px 7.5px 0 7.5px;
+        bottom: -15px;
+    }
+
+    .final__descr {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 21px;
+    }
+
+    .final__important {
+        padding: 13px 15px 8px 15px;
+        width: 259px;
+        height: 172px;
+        font-size: 16px;
+        line-height: 25px;
+    }
 }

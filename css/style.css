@@ -2,18 +2,22 @@
 @import './blocks/prediction.css';
 @import './blocks/question_one.css';
 @import './blocks/question_new.css';
+@import './blocks/micro.css';
+@import './blocks/final.css';
+@import './blocks/footer.css';
+@import './blocks/spinner.css';
 @import './media.css';
 
 
 * {
     font-family: 'Roboto', sans-serif;
-    color: rgba(255, 255, 255, 0.6);
     box-sizing: border-box;
 }
 
 body {
     margin: 0 auto;
     background-color: #262628;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .container {
@@ -46,6 +50,10 @@ body {
     margin-bottom: 35px;
 }
 
+.btn_green {
+    background: linear-gradient(90deg, rgba(76, 217, 100, 0.9) -6.2%, rgba(50, 185, 73, 0.9) 100%);
+}
+
 .btn::after {
     position: absolute;
     content: '';
@@ -74,5 +82,10 @@ body {
     .btn::after {
         width: 87px;
         height: 40px;
+    }
+
+    .btn_green {
+        width: 217.01px;
+        height: 48px;
     }
 }
