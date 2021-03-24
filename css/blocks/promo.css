@@ -89,6 +89,7 @@
 }
 
 .promo__let-us {
+    visibility: hidden;
     position: relative;
     width: 442.68px;
     height: 437.48px;

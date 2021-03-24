@@ -1,4 +1,5 @@
 
+
 .question__cursive_new {
     opacity: .6;
     margin-bottom: 111px;
@@ -46,7 +47,7 @@
     transform: translateX(-50%);
 }
 
-.question__one, .question__two, .question__three, .question__four, .question__five {
+.question__two, .question__three, .question__four, .question__five {
     display: none;
 }
 
@@ -116,3 +117,7 @@
     border-width: 17px 8.5px 0 8.5px;
     border-color: #ffffff transparent transparent transparent;
 }
+
+.invalid {
+    border: 1px solid red;
+  }

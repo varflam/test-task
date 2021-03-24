@@ -236,4 +236,16 @@
         font-size: 16px;
         line-height: 25px;
     }
+
+    .footer__text {
+        font-size: 7px;
+        line-height: 9px;
+        text-align: center;
+        letter-spacing: 3px;
+        width: 294px;
+    }
+
+    .footer__span {
+        visibility: inherit;
+    }
 }

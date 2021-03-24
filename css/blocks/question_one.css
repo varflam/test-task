@@ -1,13 +1,12 @@
 .question {
-    display: none;
+    visibility: hidden;
     position: relative;
     padding: 133px 0 220px 0;
     text-align: center;
     overflow: hidden;
 }
 
-.question::before {
-    /* display: none; */
+.question__one::before {
     position: absolute;
     content: '';
     top: 50%;
@@ -19,8 +18,7 @@
     opacity: .2;
 }
 
-.question::after {
-    /* display: none; */
+.question__one::after {
     position: absolute;
     content: '';
     bottom: 48px;
@@ -55,10 +53,6 @@
     text-align: center;
     color: #FFFFFF;
 }
-
-/* .question__one {
-    display: none;
-} */
 
 .question__cursive_one {
     position: relative;

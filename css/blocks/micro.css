@@ -42,16 +42,8 @@
 .micro__progressbar > span {
     display: block;
     height: 100%;
-    width: 20%;
     background-color: #F6C866;
     overflow: hidden;
-}
-
-.micro__percent {
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 35px;
-    margin-bottom: 10px;
 }
 
 .micro__descr {

@@ -34,6 +34,29 @@ body {
 	}
 }
 
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%
+    }
+}
+
+.appear {
+    visibility: visible;
+    animation: appear 2s;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
 .btn {
     position: relative;
     cursor: pointer;

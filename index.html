@@ -24,7 +24,7 @@
                     <img src="img/photo/woman1.png" alt="Praying woman">
                 </div>
                 <div class="promo__descr">Вас беспокоит вопрос о том, <br><span>когда Вы покинете этот Мир и при каких обстоятельствах?</span></div>
-                <button class="btn promo__btn">Да</button>
+                <button id="yes" class="btn promo__btn">Да</button>
                 <button class="btn promo__btn">Нет</button>
                 <div class="promo__online">Онлайн предсказание</div>
                 <div class="promo__let-us">
@@ -42,21 +42,20 @@
 
     <section class="question">
         <div class="container">
-            <div class="question__one">
+            <div class="question__new question__one">
                 <h2 class="question__title">Боитесь ли вы умереть?</h2>
-                <button class="btn question__btn">Да</button>
-                <button class="btn question__btn">Нет</button>
+                <button class="btn question__btn btn_next">Да</button>
+                <button class="btn question__btn btn_next">Нет</button>
                 <div class="question__number">Вопрос 1-5</div>
                 <div class="question__cursive question__cursive_one">Вы, конечно, умрете. <br> И все, с кем вы знакомы, <br> тоже однажды умрут.</div>
-                
             </div>
             <div class="question__new question__two">
                 <div class="question__cursive question__cursive_new">Мы расскажем Вам не только подробности <br> вашей смерти, но также поможем Вам <br> избежать этой ужасной даты и продлить <br> вашу жизнь на многие годы.</div>
                 <h2 class="question__title question__title_new">Когда Вы чувствуете себя наиболее комфортно?</h2>
-                <button class="btn question__btn">Утро</button>
-                <button class="btn question__btn">День</button>
-                <button class="btn question__btn">Вечер</button>
-                <button class="btn question__btn">Ночь</button>
+                <button class="btn question__btn btn_next">Утро</button>
+                <button class="btn question__btn btn_next">День</button>
+                <button class="btn question__btn btn_next">Вечер</button>
+                <button class="btn question__btn btn_next">Ночь</button>
                 <div class="question__number">Вопрос 2-5</div>
             </div>
             <div class="question__new question__three">
@@ -78,36 +77,20 @@
                         </select>
                     </div>
                     
-                    <input type="submit" class="btn question__btn" value="Далее">
+                    <input type="submit" class="btn question__btn btn_submit" value="Далее">
                 </form>
                 <div class="question__number">Вопрос 3-5</div>
             </div>
             <div class="question__new question__four">
                 <div class="question__cursive question__cursive_new">Смерть родного человека – одно из тяжелейших испытаний в жизни каждого из нас!</div>
                 <h2 class="question__title question__title_new">Снятся ли Вам умершие люди?</h2>
-                <button class="btn question__btn">Да</button>
-                <button class="btn question__btn">Нет</button>
-                <button class="btn question__btn">Иногда</button>
+                <button class="btn question__btn btn_next">Да</button>
+                <button class="btn question__btn btn_next">Нет</button>
+                <button class="btn question__btn btn_next">Иногда</button>
                 <div class="question__number">Вопрос 4-5</div>
             </div>
-            <div class="question__new question__five question__18-35">
-                <div class="question__cursive question__cursive_new">По вам скучает очень близкий человек, которого больше нет в мире живых.</div>
-                <h2 class="question__title question__title_new">Запись, которую Вы услышите, может шокировать людей с неокрепшей психикой. Вы готовы узнать, что ждет именно Вас?</h2>
-                <button class="btn question__btn">Да</button>
-                <button class="btn question__btn">Затрудняюсь ответить</button>
-                <div class="question__number">Вопрос 5-5</div>
-            </div>
-
-            <div class="question__new question__five question__36-45">
-                <div class="question__cursive question__cursive_new">По вам скучает очень близкий человек, которого больше нет в мире живых. Возможно это дедушка или бабушка.</div>
-                <h2 class="question__title question__title_new">Запись, которую Вы услышите, может шокировать людей с неокрепшей психикой. Вы готовы узнать, что ждет именно Вас?</h2>
-                <button class="btn question__btn">Да</button>
-                <button class="btn question__btn">Затрудняюсь ответить</button>
-                <div class="question__number">Вопрос 5-5</div>
-            </div>
-
-            <div class="question__new question__five question__46">
-                <div class="question__cursive question__cursive_new">По вам скучает очень близкий человек, которого больше нет в мире живых. Возможно это кто-то из Ваших родителей.</div>
+            <div class="question__new question__five">
+                <div class="question__cursive question__cursive_new result"></div>
                 <h2 class="question__title question__title_new">Запись, которую Вы услышите, может шокировать людей с неокрепшей психикой. Вы готовы узнать, что ждет именно Вас?</h2>
                 <button class="btn question__btn">Да</button>
                 <button class="btn question__btn">Затрудняюсь ответить</button>
@@ -130,9 +113,8 @@
             <div class="micro__wrapper">
                 <img src="img/icons/microphone.svg" alt="micro" class="micro__img">
                 <div class="micro__progressbar">
-                    <span></span>
+                    <span class="micro__animation"></span>
                 </div>
-                <div class="micro__percent">20%</div>
                 <div class="micro__descr">Запись сообщения</div>
             </div>
         </div>
@@ -144,19 +126,17 @@
                 <div class="final__thanks">Спасибо за Ваши ответы! <br> <span>Мы подготовили для Вас персональную аудио запись с Вашим прогнозом.</span> 
                 </div>
                 <div class="final__descr">Вы можете узнать, как повлиять на события, которые ожидают вас в ближайшем будущем.          </div>
-                <div class="final__important"><span>Первое значимое событие может произойти уже 14.02.2021</span>, вам надо быть готовым, что бы последствия не оказались необратимыми.</div>
+                <div class="final__important"><span>Первое значимое событие может произойти уже <span class="date">14.02.2021</span></span>, вам надо быть готовым, что бы последствия не оказались необратимыми.</div>
                 <div class="final__descr">Нажмите на кнопку ниже прямо сейчас и наберите наш номер телефона. Прослушайте важную информацию!</div>
-                <button type="submit" class="btn btn_green">Позвонить и прослушать</button>
+                <button type="submit" class="btn btn_green btn_call">Позвонить и прослушать</button>
             </div>
             </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="footer__text">
-                TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA <span>AVETI 18 ANI IMPLINITI, </span>
-            </div>
-        </div>
+            <a class="footer__text">
+                TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA <span class="footer__span">AVETI 18 ANI IMPLINITI, </span>
+            </a>
     </footer>
     <script src="js/script.js"></script>
 </body>
